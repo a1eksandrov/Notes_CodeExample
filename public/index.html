@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Notes</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  	<div class="container-fluid">
+  		<div class="row"> 
+  			<!-- Form to add a new Note -->
+			<div class="col-sm-4 col-sm-offset-4" id="addNoteFormCont">
+				<h1 style="text-align: center;">Hello! To add a new note fill the form below.</h1>
+				<form class="form-horizontal" id="addNoteForm">
+					<div class="form-group">
+						<label for="title" class="col-sm-2 control-label">Title</label>
+						<div class="col-sm-10">
+							<input class="form-control" name="title" placeholder="Title is..">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="text" class="col-sm-2 control-label">Text</label>
+						<div class="col-sm-10">
+							<input class="form-control" name="text" placeholder="Note text..">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="author" class="col-sm-2 control-label">Author</label>
+						<div class="col-sm-10">
+							<input class="form-control" name="author" placeholder="My name is..">
+						</div>
+					</div>
+					<div class="form-group">
+	    				<div class="col-sm-offset-2 col-sm-10">
+	      					<input type="submit" class="btn btn-default" value="Submit">
+	    				</div>
+  					</div>
+				</form>
+			</div>
+			<!-- List of Notes -->
+			<div class="col-sm-4 col-sm-offset-4" id="notesList">
+				<h2>List of notes:</h2>
+				<ul class="list-group">
+				</ul>
+			</div>
+		</div>
+  	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/client.js"></script>
+  </body>
+</html>
