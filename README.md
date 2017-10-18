@@ -1,6 +1,6 @@
 # Project Title
 
-One Paragraph of project description goes here
+This simple example of express app with mongodb was made to briefly show my skills.
 
 ## Getting Started
 
